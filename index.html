@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#090b1a">
+<title>English ke Questions Answer</title>
+<style>
+:root{--bg:#080a18;--panel:#11152b;--panel2:#171d38;--cyan:#35f4ff;--pink:#ff45c8;--violet:#9b72ff;--text:#f4f5ff;--muted:#aab1d0}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(ellipse at 15% 0%,#24205a 0,transparent 38%),radial-gradient(ellipse at 90% 25%,#123b53 0,transparent 30%),var(--bg);color:var(--text);font-family:system-ui,Arial,sans-serif;min-height:100vh}
+header{padding:30px 18px 48px;text-align:center;position:relative;overflow:hidden;border-bottom:1px solid #ffffff18}
+header:before{content:"";position:absolute;inset:-60%;background:conic-gradient(from 0deg,transparent,#35f4ff22,transparent,#ff45c822,transparent);animation:spin 18s linear infinite}
+.hero{position:relative;max-width:850px;margin:auto}
+.logo{display:inline-flex;align-items:center;gap:9px;padding:8px 14px;border:1px solid #35f4ff66;border-radius:99px;color:var(--cyan);font-size:12px;font-weight:800;letter-spacing:2px;background:#091322aa;box-shadow:0 0 22px #35f4ff22}
+h1{font-size:clamp(30px,7vw,56px);line-height:1.08;margin:22px 0 10px;letter-spacing:-1.5px;text-shadow:0 0 18px #35f4ff55}
+h1 span{background:linear-gradient(90deg,var(--cyan),#fff,var(--pink));-webkit-background-clip:text;background-clip:text;color:transparent}
+.subtitle{color:var(--muted);margin:0;font-size:15px}
+.wrap{max-width:900px;margin:-22px auto 0;padding:0 16px 40px;position:relative}
+.toolbar{display:flex;gap:10px;background:#10152aee;border:1px solid #ffffff20;border-radius:17px;padding:10px;box-shadow:0 12px 40px #0007;backdrop-filter:blur(12px)}
+.search{flex:1;min-width:0;background:#080d20;border:1px solid #ffffff20;border-radius:11px;padding:13px 14px;color:white;font-size:14px;outline:none}
+.search:focus{border-color:var(--cyan);box-shadow:0 0 0 3px #35f4ff18}
+.count{align-self:center;white-space:nowrap;color:var(--cyan);font-size:12px;padding:0 8px}
+.intro{display:flex;justify-content:space-between;align-items:end;gap:12px;margin:30px 2px 14px}
+.intro h2{margin:0;font-size:21px}.intro p{margin:5px 0 0;color:var(--muted);font-size:12px}
+.pill{font-size:10px;color:var(--pink);border:1px solid #ff45c866;border-radius:99px;padding:6px 10px;letter-spacing:1px;white-space:nowrap}
+.grid{display:grid;grid-template-columns:1fr;gap:13px}
+.card{background:linear-gradient(145deg,#171d38ee,#0e1328ee);border:1px solid #8e83ff40;border-radius:16px;padding:18px;position:relative;overflow:hidden;animation:rise .5s both;transition:.25s}
+.card:before{content:"";position:absolute;top:0;left:18px;right:18px;height:1px;background:linear-gradient(90deg,transparent,var(--cyan),var(--pink),transparent)}
+.card:hover{transform:translateY(-3px);border-color:#35f4ff99;box-shadow:0 8px 28px #35f4ff14}
+.meta{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-bottom:12px}
+.tag{color:var(--cyan);font-size:10px;letter-spacing:1.3px;text-transform:uppercase}
+.num{color:#8992b8;font-size:10px}
+.question{font-weight:750;font-size:16px;line-height:1.45;margin:0 0 12px}
+.answer{background:#080d20aa;border-left:2px solid var(--pink);border-radius:0 10px 10px 0;padding:12px 13px;color:#cbd2ef;font-size:14px;line-height:1.65}
+.answer b{color:var(--pink);font-size:11px;letter-spacing:1px;display:block;margin-bottom:4px}
+.empty{text-align:center;padding:35px 15px;border:1px dashed #6c71a5;border-radius:15px;color:var(--muted);background:#10152a88}
+footer{text-align:center;color:#777f9f;font-size:11px;padding:5px 15px 25px}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+@media(min-width:650px){.grid{grid-template-columns:1fr 1fr}.card{padding:20px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header>
+ <div class="hero">
+  <div class="logo">✦ ENGLISH STUDY HUB</div>
+  <h1>English ke<br><span>Questions Answer</span></h1>
+  <p class="subtitle">Read • Learn • Shine — your class notes, in one place.</p>
+ </div>
+</header>
+<main class="wrap">
+ <div class="toolbar">
+  <input class="search" id="search" type="search" placeholder="⌕  Search questions or answers..." aria-label="Search questions">
+  <div class="count" id="count">0 QUESTIONS</div>
+ </div>
+ <div class="intro">
+  <div><h2>✧ Main Questions & Answers</h2><p>Choose a question and revise at your own pace.</p></div>
+  <span class="pill">NEON NOTES</span>
+ </div>
+ <section class="grid" id="list" aria-live="polite"></section>
+</main>
+<footer>Made for learning · English Study Hub</footer>
+<script>
+/*
+  OWNER NOTE:
+  Add your textbook questions in the array below.
+  Only the repository owner should edit this file on GitHub.
+  After editing, commit the changes; the public website updates.
+*/
+const questions = [
+  // Example format:
+  // {chapter:"Jyoti Bharat", question:"Write your question here?", answer:"Write the answer here."}
+];
+const list=document.getElementById("list");
+const search=document.getElementById("search");
+const count=document.getElementById("count");
+function render(){
+ const term=search.value.trim().toLowerCase();
+ const filtered=questions.filter(item=>
+  [item.chapter,item.question,item.answer].join(" ").toLowerCase().includes(term)
+ );
+ count.textContent=filtered.length+" QUESTION"+(filtered.length===1?"":"S");
+ if(!filtered.length){
+  list.innerHTML='<div class="empty">'+(questions.length?'No matching questions. Try another word.':'Your questions will appear here soon. The website is ready for your notes!')+'</div>';
+  return;
+ }
+ list.innerHTML=filtered.map((item,index)=>`
+  <article class="card">
+   <div class="meta"><span class="tag">${escapeHTML(item.chapter||"English")}</span><span class="num">Q${index+1}</span></div>
+   <p class="question">${escapeHTML(item.question)}</p>
+   <div class="answer"><b>ANSWER</b>${escapeHTML(item.answer)}</div>
+  </article>`).join("");
+}
+function escapeHTML(value){
+ return String(value??"").replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));
+}
+search.addEventListener("input",render);
+render();
+</script>
+</body>
+</html>
